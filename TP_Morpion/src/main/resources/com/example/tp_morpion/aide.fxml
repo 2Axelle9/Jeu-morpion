@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="681.0" styleClass="helpWindow" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_morpion.AideController">
+   <children>
+      <Label layoutX="279.0" layoutY="14.0" styleClass="helpText" text="Aide">
+         <font>
+            <Font size="64.0" />
+         </font></Label>
+      <Label layoutX="31.0" layoutY="108.0" styleClass="helpText" text="But du jeu :" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="230.0" styleClass="helpText" text="Déroulement du jeu :" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="143.0" prefHeight="65.0" prefWidth="607.0" styleClass="helpText" text="Le but du jeu est d'aligner  au moins 3 de vos symboles horizontalement, verticalement ou en diagonale sur la grille." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="helpEnum" layoutX="31.0" layoutY="265.0" prefHeight="214.0" prefWidth="607.0" styleClass="helpText" textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="487.0" onMouseClicked="#onFAQClick" text="FAQ" textFill="#d7a23f" underline="true">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Pane layoutX="98.0" layoutY="490.0" prefHeight="35.0" prefWidth="35.0" styleClass="linkLogo" />
+   </children>
+</Pane>

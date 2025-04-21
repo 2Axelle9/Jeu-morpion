@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_morpion.ParamJeuController">
+   <children>
+      <Label layoutX="224.0" layoutY="67.0" text="Choix de la grille" textFill="#40ddca">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAideClick" prefHeight="50.0" prefWidth="50.0" styleClass="helpButton" />
+      <Label layoutX="275.0" layoutY="370.0" text="Mode de jeu" textFill="#d7a23f">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="646.0" text="Suivant" textFill="#acbec8">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="suivantButton" layoutX="413.0" layoutY="646.0" mnemonicParsing="false" onAction="#onNextClick" prefHeight="40.0" prefWidth="40.0" styleClass="nextButton" />
+      <ToggleButton fx:id="choixGrille3x3" alignment="BOTTOM_CENTER" layoutX="89.0" layoutY="147.0" mnemonicParsing="false" onAction="#choixGrille" prefHeight="182.0" prefWidth="144.0" text="3 x 3">
+         <styleClass>
+            <String fx:value="gridSizeButton" />
+            <String fx:value="grid3x3Button" />
+         </styleClass>
+         <toggleGroup>
+            <ToggleGroup fx:id="choixGrilleToggleGroup" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="choixGrille5x5" alignment="BOTTOM_CENTER" layoutX="329.0" layoutY="147.0" mnemonicParsing="false" onAction="#choixGrille" prefHeight="182.0" prefWidth="144.0" text="5 x 5" toggleGroup="$choixGrilleToggleGroup">
+         <styleClass>
+            <String fx:value="gridSizeButton" />
+            <String fx:value="grid5x5Button" />
+         </styleClass>
+      </ToggleButton>
+      <ToggleButton fx:id="choixGrille7x7" alignment="BOTTOM_CENTER" layoutX="567.0" layoutY="147.0" mnemonicParsing="false" onAction="#choixGrille" prefHeight="182.0" prefWidth="144.0" text="7 x 7" toggleGroup="$choixGrilleToggleGroup">
+         <styleClass>
+            <String fx:value="gridSizeButton" />
+            <String fx:value="grid7x7Button" />
+         </styleClass>
+      </ToggleButton>
+      <ToggleButton fx:id="choixModeOrdinateur" alignment="BOTTOM_CENTER" layoutX="176.0" layoutY="450.0" mnemonicParsing="false" onAction="#choixMode" prefHeight="136.0" prefWidth="181.0" text="Ordinateur">
+         <styleClass>
+            <String fx:value="modeButton" />
+            <String fx:value="computerModeButton" />
+         </styleClass>
+         <toggleGroup>
+            <ToggleGroup fx:id="choixModeToggleGroup" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="choixMode2Joueurs" alignment="BOTTOM_CENTER" layoutX="443.0" layoutY="450.0" mnemonicParsing="false" onAction="#choixMode" prefHeight="136.0" prefWidth="181.0" text="2 joueurs" toggleGroup="$choixModeToggleGroup">
+         <styleClass>
+            <String fx:value="modeButton" />
+            <String fx:value="twoPlayersrModeButton" />
+         </styleClass>
+      </ToggleButton>
+      <Button layoutX="722.0" layoutY="28.0" mnemonicParsing="false" onAction="#onQuitterClick" prefHeight="50.0" prefWidth="50.0" styleClass="quitterButton" />
+   </children>
+</Pane>

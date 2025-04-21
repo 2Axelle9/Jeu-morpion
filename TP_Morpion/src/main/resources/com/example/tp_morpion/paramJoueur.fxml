@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_morpion.ParamJoueurController">
+   <children>
+      <Button layoutX="28.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAideClick" prefHeight="50.0" prefWidth="50.0" styleClass="helpButton" />
+      <Label layoutX="278.0" layoutY="67.0" text="Les joueurs" textFill="#acbec8">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Pane layoutX="172.5" layoutY="175.0" prefHeight="114.0" prefWidth="114.0" styleClass="symbolP1" />
+      <Pane layoutX="542.5" layoutY="175.0" prefHeight="114.0" prefWidth="114.0" styleClass="symbolP2" />
+      <Line endY="352.0" layoutX="400.0" layoutY="148.0" stroke="#acbec8" strokeWidth="3.0" />
+      <Button alignment="BOTTOM_LEFT" layoutX="181.0" layoutY="324.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" styleClass="updateButton" text="Modifier" />
+      <Button alignment="BOTTOM_LEFT" layoutX="551.0" layoutY="324.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" styleClass="updateButton" text="Modifier" />
+      <Label layoutX="75.0" layoutY="382.0" text="Nom :" textFill="#acbec8" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="165.0" layoutY="377.0" prefHeight="35.0" prefWidth="190.0" styleClass="frameNamePlayer">
+         <children>
+            <TextField fx:id="joueur1" layoutX="6.0" layoutY="-4.0" prefHeight="39.0" prefWidth="144.0" styleClass="textNamePlayer" text="Joueur 1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label layoutX="445.0" layoutY="382.0" text="Nom :" textFill="#acbec8" underline="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="535.0" layoutY="379.0" prefHeight="35.0" prefWidth="190.0" styleClass="frameNamePlayer">
+         <children>
+            <TextField fx:id="joueur2" layoutX="6.0" layoutY="-4.0" prefHeight="39.0" prefWidth="144.0" styleClass="textNamePlayer" text="Joueur 2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <RadioButton fx:id="j1Premier" layoutX="75.0" layoutY="443.0" mnemonicParsing="false" styleClass="radioButton" text="Joue en premier">
+         <toggleGroup>
+            <ToggleGroup fx:id="premierJoueurToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="aleaPremier" layoutX="270.0" layoutY="520.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="245.0" selected="true" text="Choix aléatoire" toggleGroup="$premierJoueurToggleGroup">
+         <styleClass>
+            <String fx:value="radioButton" />
+            <String fx:value="shuffleRadioButton" />
+         </styleClass></RadioButton>
+      <RadioButton fx:id="j2Premier" layoutX="445.0" layoutY="443.0" mnemonicParsing="false" styleClass="radioButton" text="Joue en premier" toggleGroup="$premierJoueurToggleGroup" />
+      <Label layoutX="275.0" layoutY="646.0" text="Débuter la partie" textFill="#acbec8">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="486.0" layoutY="646.0" mnemonicParsing="false" onAction="#onNextClick" prefHeight="40.0" prefWidth="40.0" styleClass="nextButton" />
+      <Button layoutX="722.0" layoutY="28.0" mnemonicParsing="false" onAction="#onQuitterClick" prefHeight="50.0" prefWidth="50.0" styleClass="quitterButton" />
+   </children>
+</Pane>

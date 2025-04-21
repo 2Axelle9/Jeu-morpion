@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="401.0" styleClass="quiteWindow" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_morpion.QuitterController">
+   <children>
+      <TextFlow layoutX="73.0" layoutY="38.0" prefHeight="64.0" prefWidth="255.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="confirmationSentence" text="Voulez-vous" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" quitter">
+               <styleClass>
+                  <String fx:value="confirmationSentence" />
+                  <String fx:value="quiteWord" />
+               </styleClass></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="confirmationSentence" text=" le jeu ?" />
+         </children>
+      </TextFlow>
+      <Button layoutX="50.0" layoutY="155.0" mnemonicParsing="false" onAction="#yesQuitClick" prefHeight="51.0" prefWidth="117.0" styleClass="yesButton" text="Oui" />
+      <Button layoutX="234.0" layoutY="155.0" mnemonicParsing="false" onAction="#noQuitClick" prefHeight="51.0" prefWidth="117.0" styleClass="noButton" text="Non" />
+   </children>
+</Pane>

@@ -1,0 +1,320 @@
+/***********************/
+/*Pour toutes les pages*/
+/***********************/
+
+/*@font-face {   //Avis mitige sur le choix de la police d'un point de vue esthetique
+    src: url('SeoulNamsan-Medium.ttf');
+}
+
+* {
+    -fx-font-family: SeoulNamsan;
+}*/
+
+VBox, Pane {
+    -fx-background-color: #1D2A32;
+    -fx-font-family: SeoulNamsan;
+}
+
+.principalButton {
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 31;
+    -fx-background-radius: 15px;
+}
+
+.helpButton {
+    -fx-background-image: url(aide.png);
+    -fx-background-size : cover;
+    -fx-background-color: none;
+}
+
+.quitterButton{
+    -fx-background-image: url(quitter.png);
+    -fx-background-size : cover;
+    -fx-background-color: none;
+}
+
+
+/****************/
+/*Page d'accueil*/
+/****************/
+.logo{
+    -fx-background-image: url(logo.png);
+    -fx-background-size : cover;
+}
+
+.launchButton {
+    -fx-background-color: #40DDCA;
+}
+
+.myScoreButton {
+    -fx-background-color: #D7A23F; 
+}
+
+
+/*************/
+/*Page d'aide*/
+/*************/
+
+.helpWindow {
+    -fx-border-color:#ACBEC8;
+    -fx-border-width:0 4 4 4;
+}
+
+.helpText{
+    -fx-text-background-color:#ACBEC8;
+}
+
+.linkLogo {
+    -fx-background-image: url(lienLogo.png);
+    -fx-background-size : 100% 100%;
+    -fx-background-color: none;
+}
+
+
+/*******************/
+/*Page pour quitter*/
+/*******************/
+
+.quiteWindow {
+    -fx-border-color:#ACBEC8;
+    -fx-border-width:0 4 4 4;
+}
+
+.confirmationSentence{
+    -fx-fill: #ACBEC8;
+    -fx-font-size: 35;
+}
+
+.quiteWord{
+    -fx-fill: #D7A23F;
+}
+
+.yesButton{
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 31;
+    -fx-background-color: #D7A23F;
+    -fx-background-radius: 15px;
+}
+
+.noButton{
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 31;
+    -fx-background-color: #40DDCA;
+    -fx-background-radius: 15px;
+}
+
+
+/****************************/
+/*Page de parametrage du jeu*/
+/****************************/
+
+.gridSizeButton {
+    -fx-text-fill:#ACBEC8;
+    -fx-font-size: 36;
+    -fx-background-position: 19.5px 10px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-border-color:#ACBEC8;
+    -fx-border-width:3;
+    -fx-border-radius: 15px;
+}
+
+.gridSizeButton:selected { 
+    -fx-text-fill:#1D2A32;
+    -fx-background-color: #ACBEC8;
+}
+
+.grid3x3Button {
+    -fx-background-image: url(grille3x3Logo.png);
+}
+
+.grid3x3Button:selected {
+    -fx-background-image: url(grille3x3LogoClick.png);
+}
+
+.grid5x5Button {
+    -fx-background-image: url(grille5x5Logo.png);
+}
+
+.grid5x5Button:selected {
+    -fx-background-image: url(grille5x5LogoClick.png);
+}
+
+.grid7x7Button {
+    -fx-background-image: url(grille7x7Logo.png);
+}
+
+.grid7x7Button:selected {
+    -fx-background-image: url(grille7x7LogoClick.png);
+}
+
+.modeButton {
+    -fx-text-fill:#ACBEC8;
+    -fx-font-size: 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+    -fx-border-color:#ACBEC8;
+    -fx-border-width:3;
+    -fx-border-radius: 15px;
+}
+
+.modeButton:selected {
+    -fx-text-fill:#1D2A32;
+    -fx-background-color: #ACBEC8;
+}
+
+.computerModeButton{
+    -fx-background-image: url(ordinateurLogo.png);
+    -fx-background-position: 37.5px 2px;
+}
+
+.computerModeButton:selected{
+    -fx-background-image: url(ordinateurLogoClick.png);
+}
+
+.twoPlayersrModeButton{
+    -fx-background-image: url(deuxJoueursLogo.png);
+    -fx-background-position: 13px 8px;
+}
+.twoPlayersrModeButton:selected{
+    -fx-background-image: url(deuxJoueursLogoClick.png);
+}
+
+.nextButton{
+    -fx-background-image: url(suivant.png);
+    -fx-background-size : contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+
+/*********************************/
+/*Page de parametrage des joueurs*/
+/*********************************/
+
+.symbolP1 {
+    -fx-background-image: url(symboleDefautX.png);
+    -fx-background-size : contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+.symbolP2 {
+    -fx-background-image: url(symboleDefautO.png);
+    -fx-background-size : contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: none;
+}
+
+.updateButton{
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 14;
+    -fx-background-color: #ACBEC8;
+    -fx-border-radius: 15px;
+    -fx-background-image: url(modifierLogo.png);
+    -fx-background-size: 26px 26px;
+    -fx-background-position: 64px 0px;
+    -fx-background-repeat: no-repeat;
+   
+}
+
+.frameNamePlayer{
+    -fx-border-color:#ACBEC8;
+    -fx-border-radius: 10px;
+    -fx-background-image: url(editerLogo.png);
+    -fx-background-size: 26px 26px;
+    -fx-background-position: 152px 3.5px;
+    -fx-background-repeat: no-repeat;
+}
+
+.textNamePlayer{
+    -fx-text-fill:#ACBEC8;
+    -fx-background-color: none;
+}
+
+.radioButton{
+    -fx-text-fill:#ACBEC8;
+    -fx-font-size: 25;
+}
+
+.radioButton .radio {
+    -fx-background-color: #1D2A32;
+    -fx-border-color: #ACBEC8;
+    -fx-border-width:3px;
+    -fx-border-radius: 100%;
+    -fx-pref-width: 32px;
+    -fx-pref-height: 32px;
+}
+
+.radio-button .dot {
+    -fx-padding: 5px;
+}
+
+.radioButton:selected .dot{
+    -fx-background-color: #ACBEC8;
+}
+
+.shuffleRadioButton {
+    -fx-background-image: url(aleatoire.png);
+    -fx-background-size: 35px 35px;
+    -fx-background-position: right;
+    -fx-background-repeat: no-repeat;
+}
+
+
+/*************/
+/*Page de jeu*/
+/*************/
+
+.restartButton {
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 22;
+    -fx-background-color: #ACBEC8;
+    -fx-background-radius: 15px;
+}
+
+
+.gridButton {
+    -fx-background-color: none;
+    -fx-border-color: #ACBEC8;
+    -fx-border-width: 4px;
+}
+
+.gridButton:disabled {
+    -fx-opacity: 1;
+}
+
+.playerName{
+    -fx-alignment: CENTER_RIGHT;
+}
+
+
+/*******************/
+/*Page de resultats*/
+/*******************/
+
+.resultAnnouncement {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-text-fill:#ACBEC8;
+}
+
+.scoreboard {
+    -fx-border-color: #ACBEC8;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+}
+
+.afterGameButton{
+    -fx-text-fill: #1D2A32;
+    -fx-font-size: 30;
+    -fx-background-radius: 15px;
+}
+
+.replayButton {
+    -fx-background-color: #40DDCA;
+}
+
+.finishButton {
+    -fx-background-color: #D7A23F; 
+}
